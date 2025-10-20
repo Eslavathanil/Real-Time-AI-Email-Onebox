@@ -1,40 +1,30 @@
-# Welcome to your Lovable project
+# 📬 Real-Time AI Email Onebox
 
-## Project info
+**Live Demo:** 🌐 [https://real-time-ai-email-onebox.netlify.app/](https://real-time-ai-email-onebox.netlify.app/)
 
-**URL**: https://lovable.dev/projects/c57e4a03-9739-4895-883f-f2ecdfd42ebf
+A next-generation intelligent email assistant that performs **real-time synchronization, AI-powered categorization, semantic search, and automated reply generation** — all in one unified inbox.
 
-## How can I edit this code?
 
-There are several ways of editing your application.
+## 🚀 Phase 0: Project Setup & Architecture Overview
 
-**Use Lovable**
+### 🧱 Core Components
+- **IMAP Sync Service** — Real-time email synchronization via IMAP `IDLE`.
+- **Persistence Layer** — Combination of Elasticsearch (for search) and a Vector Database (for RAG).
+- **API & Web Integration Layer** — Built using Node.js and TypeScript.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c57e4a03-9739-4895-883f-f2ecdfd42ebf) and start prompting.
+### ⚙️ Initializing the Project
 
-Changes made via Lovable will be committed automatically to this repo.
+```bash
+# 1. Create Project Directory
+mkdir reachinbox-onebox
+cd reachinbox-onebox
 
-**Use your preferred IDE**
+# 2. Initialize Project
+npm init -y
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+# 3. Add TypeScript
+npm install typescript @types/node ts-node --save-dev
+npx tsc --init
 
 **Edit a file directly in GitHub**
 
@@ -60,14 +50,3 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c57e4a03-9739-4895-883f-f2ecdfd42ebf) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
